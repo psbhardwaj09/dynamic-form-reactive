@@ -1,0 +1,15 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+<div class="app">
+      <dynamic-form 
+        [config]="formData"
+        (submitted)="formSubmitted($event)">
+      </dynamic-form>
+</div>
+
+
+<h6> Entered Details</h6>
+{{ this.formOutput | json }}
